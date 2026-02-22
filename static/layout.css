@@ -1,0 +1,138 @@
+/* ========================
+   LAYOUT.CSS
+   Structure and positioning only.
+   No colors, fonts, or component styles.
+   ======================== */
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Sections */
+.section {
+  padding: 80px 0;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gap-sm {
+  gap: 10px;
+}
+
+.gap-md {
+  gap: 20px;
+}
+
+.gap-lg {
+  gap: 30px;
+}
+
+/* Nav */
+.nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero */
+.hero {
+  padding: 100px 0 80px;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.hero-image {
+  max-width: 100%;
+  margin-top: 40px;
+}
+
+/* Pricing */
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.pricing-features li {
+  padding: 8px 0;
+}
+
+/* FAQ */
+.faq {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  padding: 20px 0;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 80px 0;
+}
+
+/* Footer */
+.footer {
+  padding: 60px 0 30px;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+/* Utilities */
+.text-center {
+  text-align: center;
+}
+
+.w-full {
+  width: 100%;
+}
+
+/* Hamburger Toggle (hidden on desktop) */
+.nav-toggle {
+  display: none;
+}
