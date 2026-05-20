@@ -1,46 +1,58 @@
-  ---
-  # Project Name
+# Project Name
 
-  One-line description of the website.
+One-line description of the website.
 
-  ## Tech Stack
+## Tech Stack
 
-  Pure HTML, CSS, and JavaScript — no frameworks, no dependencies, no build tools. This keeps the site fast, lightweight, and easy to
-  maintain.
+Built with HTML, CSS, and vanilla JavaScript. This was the right fit for a marketing site that updates infrequently — fast load times, free hosting, and minimal maintenance overhead. For sites that need client editing, a CMS would be the better choice.
 
-  ## File Structure
+## File Structure
 
-  ### Core Files
+### Core Files
 
-  - **`index.html`** — The homepage. This is the main entry point of the site.
-  - **`404.html`** — Custom error page shown when a visitor lands on a broken or non-existent link. Keeps users on-brand instead of
-  seeing a generic server error.
-  - **`robots.txt`** — Tells search engine crawlers which pages to index and where to find the sitemap. Important for SEO.
-  - **`favicon.svg`** — The small icon that appears in browser tabs and bookmarks. SVG format so it scales cleanly on any screen.
+- `index.html` — Homepage and main entry point
+- `404.html` — Custom error page for broken or missing links
+- `robots.txt` — Tells search engine crawlers what to index and where to find the sitemap
+- `sitemap.xml` — Lists all indexable pages for search engines
+- `favicon.svg` — Browser tab icon, in SVG for clean scaling
 
-  ### Directories
+### Directories
 
-  - **`css/`** — Contains `styles.css`, the single stylesheet that controls the entire site's visual design (layout, colors,
-  typography, spacing, responsiveness).
-  - **`css/reset.css`** Built on Josh Comeau's modern CSS reset for consistent cross-browser baseline.
-  - **`js/`** — Contains `main.js`, which handles all interactive behavior (mobile menu, animations, form handling, scroll effects).
-  - **`fonts/`** — Self-hosted font files. Fonts are stored locally rather than loaded from Google Fonts for faster page loads and
-  better privacy compliance.
-  - **`assets/img/`** — All images and media used across the site.
+- `css/styles.css` — Single stylesheet controlling layout, colors, typography, spacing, and responsiveness
+- `css/reset.css` — Josh Comeau's modern CSS reset for consistent cross-browser baseline
+- `js/main.js` — Handles mobile menu, animations, form submission, and scroll effects
+- `fonts/` — Self-hosted .woff2 files for faster loads and privacy compliance
+- `assets/img/` — All images and media
 
-  ### Pages
+### Pages
 
-  - **`pages/`** — General informational pages like About and Terms of Service.
-  - **`services/`** — Individual service pages. Each page targets a specific service keyword for SEO and gives visitors detailed information about that offering.
-  - **`locations/`** — City or region-specific landing pages. These help the business rank in local search results for each area served.
-  - **`service-areas.html`** — Overview page listing all locations and service areas. Acts as a hub linking to individual location pages.
+- `pages/` — General informational pages (About, Terms, etc.)
+- `services/` — Individual service pages, each targeting a specific service keyword for SEO
+- `locations/` — City or region-specific landing pages for local search ranking
+- `service-areas.html` — Hub page linking to all individual location pages
 
-  ## Forms
+## Forms
 
-  Contact forms submit through Formspree, a third-party form handler. No backend server is needed. The form endpoint should be locked in the Formspree dashboard to only accept submissions from the client's domain.
+Contact forms submit through Formspree, a third-party form handler. No backend server required. The endpoint should be domain-locked in the Formspree dashboard to only accept submissions from the client's domain.
 
-  ## SEO
+## SEO
 
-  Each page includes structured data (JSON-LD schema), Open Graph tags for social sharing, and meta descriptions. These are critical for search engine visibility and how the site appears when shared on social media.
+Each page includes:
+- JSON-LD structured data
+- Open Graph and Twitter Card metadata
+- Unique title and meta description
+- Canonical URL
 
-  ---
+## Local Development
+
+No build step required. Open `index.html` directly, or run a local server:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then visit `http://localhost:8000`.
+
+## Built By
+
+DG Web Agency · Pasadena, CA · [dgwebagency.com](https://dgwebagency.com)
